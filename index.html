@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ammu.css">
+</head>
+<body>
+    <h1>Student marks</h1>
+    <input id="name" type="text"placeholder="enter your name">
+    <input id="marks"type="number"placeholder="enter your marks">
+    
+    <button type ="submit" onclick=vote()>CHECK</button>
+    <P id="p">its time to check your marks</P>
+    <script>
+        function vote(){
+            var name= document.getElementById("name").value;
+            var marks= document.getElementById("marks").value;
+            
+            var p= document.getElementById("p");
+             if(marks>=36){
+                p.innerHTML=name+("you are pass");
+             }
+             else{
+                p.innerHTML=name+("you are fail");
+             }
+
+
+        }
+    </script>
+</body>
+</html>
